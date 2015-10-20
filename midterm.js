@@ -21,5 +21,18 @@ function updateTime()
 
 	alarmHour = parseInt(alarmHour)+parseInt(ampm);
 
-	document.getElementById('answer').innerHTML = alarmHour;
+	currentHours = currentTime.getHours();
+	var test;
+	if(parseInt(alarmHour) > parseInt(currentHours))
+	{
+		test = parseInt(alarmHour)-parseInt(currentHours);
+	}
+	else
+	{
+		test = 24-parseInt(currentHours)+parseInt(alarmHour);
+	}
+	//var remainingHours = Math.abs(parseInt()-parseInt(currentHours));
+
+
+	document.getElementById('answer').innerHTML = test;
 }
