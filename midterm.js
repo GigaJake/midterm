@@ -31,8 +31,20 @@ function updateTime()
 	{
 		test = 24-parseInt(currentHours)+parseInt(alarmHour);
 	}
-	//var remainingHours = Math.abs(parseInt()-parseInt(currentHours));
+	test--;
+	var test2 = 60-parseInt(currentMinutes);
+	/*if(test == 1 && test2 !=60)
+	{
+		test = 0;
+	}*/
+	test3 = 60-parseInt(currentSeconds)
+
+	test = (test < 10 ? "0" : "") + test;
+	test2 = (test2 < 10 ? "0" : "") + test2;
+	test3 = (test3 < 10 ? "0" : "") + test3;
 
 
-	document.getElementById('answer').innerHTML = test;
+
+
+	document.getElementById('answer').innerHTML = test + ":" + test2 + ":" + test3 + " hours of sleep!";
 }
