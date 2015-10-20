@@ -1,0 +1,32 @@
+html {
+	box-sizing: border-box;
+	background-color: #B2CCFF;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Helvetica */
+body {
+	font-family: helvetica, sans-serif;
+}
+
+h1{
+	margin-left:40%;
+}
+
+img
+{
+	border: solid 2px black;
+	margin-left:34%;
+}
+
+#clock {
+	margin-left:42%;
+	font-weight: bold;
+}
+
+#remain {
+	margin-left:40%;
+}

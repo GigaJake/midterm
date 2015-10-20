@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Your Bed's Blog</title>
+		<link rel="stylesheet" href="midterm.css">
+	</head>
+	<body onload="updateTime(); setInterval('updateTime()',1000)">
+		<div id="page">
+			<h1>How much sleep?</h1>
+
+			<span id="content">
+
+			<img src="bed.jpg" width=500px height=500px />
+			<br />
+			<br />
+			<div id="clock">&nbsp;</div>
+			<div id="remain"><b>Set your alarm:</b>
+				<select>
+					<option value="1">1:00</option>
+					<option value="2">2:00</option>
+					<option value="3">3:00</option>
+					<option value="4">4:00</option>
+					<option value="5">5:00</option>
+					<option value="6">6:00</option>
+					<option value="7">7:00</option>
+					<option value="8">8:00</option>
+					<option value="9">9:00</option>
+					<option value="10">10:00</option>
+					<option value="11">11:00</option>
+					<option value="12">12:00</option>
+				</select>
+
+				<select>
+					<option value="0">AM</option>
+					<option value="12">PM</option>
+				</select>
+			</div>
+		</span>
+
+		</div>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="midterm.js"></script>
+	</body>
+</html>
