@@ -15,4 +15,11 @@ function updateTime()
 	var time = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
 
 	document.getElementById('clock').firstChild.nodeValue = "Current Time: " + time;
+
+	var alarmHour = $('#hour').val();
+	var ampm = $('#ampm').val();
+
+	alarmHour = parseInt(alarmHour)+parseInt(ampm);
+
+	document.getElementById('answer').innerHTML = alarmHour;
 }
